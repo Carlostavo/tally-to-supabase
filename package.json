@@ -1,13 +1,11 @@
 {
   "name": "tally-to-supabase",
   "version": "1.0.0",
-  "main": "api/tally-webhook.js",
   "type": "module",
-  "scripts": {
-    "dev": "vercel dev",
-    "start": "node api/tally-webhook.js"
-  },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.8"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
