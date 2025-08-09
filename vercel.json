@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "api/tally-webhook.js",
-      "use": "@vercel/node@20.x"
+      "use": "@vercel/node@3.0.0"
     }
   ]
 }
