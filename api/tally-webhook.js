@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Asegúrate de que estas variables de entorno estén configuradas en Vercel
+// Asegúrate de que estas variables de entorno están configuradas en Vercel
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
@@ -12,6 +12,7 @@ export default async function handler(req, res) {
   }
 
   const payload = req.body;
+  console.log(payload); // <-- ¡Añade esta línea!
 
   if (!payload || !payload.data) {
     return res.status(400).json({ error: 'Invalid data' });
